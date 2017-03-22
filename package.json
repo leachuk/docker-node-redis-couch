@@ -1,0 +1,15 @@
+{
+	"name": "node-redis-count-docker",
+	"version": "1.0.0",
+	"description": "Sample project for docker testing",
+	"main": "app.js",
+	"scripts": {
+	"test": "test"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "~4.0.0",
+		"redis": "2.7.1"
+	}
+}

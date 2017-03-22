@@ -1,0 +1,18 @@
+version: '2'
+services:
+  web:
+    build:
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    volumes:
+      - "./app:/src/app"
+    ports:
+      - "8181:8080"
+    links:
+      - "db:redis"
+
+  db:
+    image: redis
